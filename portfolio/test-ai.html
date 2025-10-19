@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot Test</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>AI Chatbot Test</h1>
+    <p>Check if the AI chatbot appears in the bottom-right corner.</p>
+    
+    <script>
+        console.log('Test page loaded');
+        
+        // Simple test to create chatbot
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('DOM loaded, creating test chatbot...');
+            
+            const testWidget = document.createElement('div');
+            testWidget.className = 'ai-chatbot-widget';
+            testWidget.style.cssText = `
+                position: fixed;
+                bottom: 24px;
+                right: 24px;
+                z-index: 1000;
+                background: red;
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 24px;
+            `;
+            testWidget.innerHTML = '🤖';
+            
+            document.body.appendChild(testWidget);
+            console.log('Test chatbot created');
+        });
+    </script>
+    
+    <script src="js/ai-config.js" defer></script>
+    <script src="js/ai-features.js" defer></script>
+</body>
+</html>

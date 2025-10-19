@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Amit Ranjan Maurya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="site-header" data-sticky>
+    <div class="header-inner">
+      <div class="logo-section">
+        <a class="logo" href="index.html" aria-label="Go to home">
+          <div class="logo-icon">
+            <span class="logo-symbol">A</span>
+          </div>
+          <div class="logo-content">
+            <span class="logo-text">Amit Ranjan</span>
+            <span class="logo-subtitle">Full Stack Developer</span>
+          </div>
+        </a>
+      </div>
+      
+      <nav class="site-nav" aria-label="Primary">
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="projects.html" class="nav-link">Portfolio</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+        
+        <div class="header-actions">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <span class="theme-icon" aria-hidden="true"></span>
+            <span class="theme-text">Theme</span>
+          </button>
+          <a href="contact.html" class="cta-button">
+            <span class="cta-text">Let's Talk</span>
+            <span class="cta-icon">→</span>
+          </a>
+        </div>
+        
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </nav>
+    </div>
+    
+    <div class="header-progress"></div>
+  </header>
+
+  <main class="page contact-page">
+    <section class="section">
+      <div class="container">
+        <h1>Contact</h1>
+        <div class="grid-2">
+          <div>
+            <ul class="contact-info" data-reveal="fade-up">
+              <li><strong>Location:</strong> Maharajganj, Uttar Pradesh, India</li>
+              <li><strong>Email:</strong> <a
+                  href="mailto:amitrajanmaurya1998@gmail.com">amitrajanmaurya1998@gmail.com</a></li>
+              <li><strong>LinkedIn:</strong> <a target="_blank" rel="noreferrer noopener"
+                  href="https://linkedin.com/in/amit-ranjan-maurya">Profile</a></li>
+              <li><strong>Instagram:</strong> <a target="_blank" rel="noreferrer noopener"
+                  href="https://instagram.com/amitranjanmaurya">@amitranjanmaurya</a></li>
+            </ul>
+          </div>
+          <form id="contact-form" class="contact-form" novalidate data-reveal="fade-in">
+            <div class="field">
+              <label for="fullName">Full Name</label>
+              <input id="fullName" name="fullName" type="text" required autocomplete="name" />
+              <span class="error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="email">Email Address</label>
+              <input id="email" name="email" type="email" required autocomplete="email" />
+              <span class="error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" required />
+              <span class="error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="service">Service Interested</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select service</option>
+                <option>Web Development</option>
+                <option>CMS Solutions</option>
+                <option>Data Science</option>
+                <option>Application Development</option>
+                <option>AI Agent Development</option>
+                <option>API Development</option>
+              </select>
+              <span class="error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+              <span class="error" aria-live="polite"></span>
+            </div>
+            <button class="btn btn-primary" type="submit">Send</button>
+            <p id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <nav class="footer-nav" aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a aria-current="page" class="active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="socials">
+        <a href="https://linkedin.com/in/amit-ranjan-maurya" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+        <a href="https://instagram.com/amitranjanmaurya" target="_blank" rel="noreferrer noopener">Instagram</a>
+      </div>
+      <p class="copy">© <span id="year"></span> Amit Ranjan Maurya</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/header-enhancements.js" defer></script>
+  <script src="js/enhanced-interactions.js" defer></script>
+  <script src="js/contact.js" defer></script>
+  <script src="js/ai-config.js" defer></script>
+  <script src="js/ai-features.js" defer></script>
+  <script src="fix-theme.js" defer></script>
+
+
+</body>
+
+</html>
