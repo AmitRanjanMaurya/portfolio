@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects — Amit Ranjan Maurya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header" data-sticky>
+      <div class="header-inner">
+        <div class="logo-section">
+          <a class="logo" href="index.html" aria-label="Go to home">
+            <div class="logo-icon">
+              <span class="logo-symbol">A</span>
+            </div>
+            <div class="logo-content">
+              <span class="logo-text">Amit Ranjan</span>
+              <span class="logo-subtitle">Full Stack Developer</span>
+            </div>
+          </a>
+        </div>
+        
+        <nav class="site-nav" aria-label="Primary">
+          <ul id="nav-menu" class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="skills.html" class="nav-link">Skills</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="projects.html" class="nav-link active">Portfolio</a></li>
+            <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+          
+          <div class="header-actions">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+              <span class="theme-icon" aria-hidden="true"></span>
+              <span class="theme-text">Theme</span>
+            </button>
+            <a href="contact.html" class="cta-button">
+              <span class="cta-text">Let's Talk</span>
+              <span class="cta-icon">→</span>
+            </a>
+          </div>
+          
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+          </button>
+        </nav>
+      </div>
+      
+      <div class="header-progress"></div>
+    </header>
+
+    <main class="page projects-page">
+      <!-- Projects Hero -->
+      <section class="projects-hero">
+        <div class="container">
+          <div class="projects-hero-content" data-reveal="fade-up">
+            <div class="hero-badge">
+              <span class="badge-text">Portfolio Showcase</span>
+            </div>
+            <h1 class="projects-title">My Creative Works</h1>
+            <p class="projects-subtitle">Explore my latest projects showcasing innovative solutions in web development, data science, and AI technologies</p>
+            
+            <div class="projects-stats" data-reveal="fade-up" data-delay="200">
+              <div class="stat-item">
+                <span class="stat-number" data-target="25">0</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="15">0</span>
+                <span class="stat-label">Happy Clients</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="8">0</span>
+                <span class="stat-label">Technologies Used</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projects-hero-bg">
+          <div class="floating-elements">
+            <div class="code-element">{ }</div>
+            <div class="code-element">&lt;/&gt;</div>
+            <div class="code-element">[ ]</div>
+            <div class="code-element">( )</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Filters -->
+      <section class="projects-filters">
+        <div class="container">
+          <div class="filters-wrapper" data-reveal="fade-up">
+            <h2 class="filters-title">Filter by Category</h2>
+            <div class="filters" role="tablist" aria-label="Project filters">
+              <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+                <span class="filter-icon">🌟</span>
+                <span class="filter-text">All Projects</span>
+                <span class="filter-count">12</span>
+              </button>
+              <button class="filter-btn" data-filter="web" role="tab">
+                <span class="filter-icon">🌐</span>
+                <span class="filter-text">Web Development</span>
+                <span class="filter-count">6</span>
+              </button>
+              <button class="filter-btn" data-filter="data" role="tab">
+                <span class="filter-icon">📊</span>
+                <span class="filter-text">Data Science</span>
+                <span class="filter-count">4</span>
+              </button>
+              <button class="filter-btn" data-filter="ai" role="tab">
+                <span class="filter-icon">🤖</span>
+                <span class="filter-text">AI & Machine Learning</span>
+                <span class="filter-count">2</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Grid -->
+      <section class="projects-showcase">
+        <div class="container">
+          <div id="projects-grid" class="projects-grid" data-reveal="fade-up">
+            
+            <!-- Featured Project -->
+            <article class="project-card featured" data-category="web" data-reveal="fade-up" data-delay="100">
+              <div class="project-image">
+                <img src="assets/placeholder-1.svg" alt="E-Commerce Platform" loading="lazy" />
+                <div class="project-overlay">
+                  <div class="project-actions">
+                    <button class="action-btn" data-tooltip="View Details" onclick="openProjectModal('ecommerce')">
+                      <span class="icon">👁️</span>
+                    </button>
+                    <a href="#" class="action-btn" data-tooltip="Live Demo" target="_blank">
+                      <span class="icon">🚀</span>
+                    </a>
+                    <a href="#" class="action-btn" data-tooltip="Source Code" target="_blank">
+                      <span class="icon">💻</span>
+                    </a>
+                  </div>
+                  <div class="project-status">
+                    <span class="status-badge featured">Featured</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3 class="project-title">Advanced E-Commerce Platform</h3>
+                  <div class="project-rating">
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <span class="rating-text">5.0</span>
+                  </div>
+                </div>
+                <p class="project-description">Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include real-time inventory, payment integration, and advanced analytics dashboard.</p>
+                <div class="project-tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">Stripe</span>
+                </div>
+                <div class="project-meta">
+                  <div class="meta-item">
+                    <span class="meta-label">Duration:</span>
+                    <span class="meta-value">3 months</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Client:</span>
+                    <span class="meta-value">TechCorp Inc.</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Regular Projects -->
+            <article class="project-card" data-category="data" data-reveal="fade-up" data-delay="200">
+              <div class="project-image">
+                <img src="assets/placeholder-2.svg" alt="Data Analytics Dashboard" loading="lazy" />
+                <div class="project-overlay">
+                  <div class="project-actions">
+                    <button class="action-btn" data-tooltip="View Details" onclick="openProjectModal('analytics')">
+                      <span class="icon">👁️</span>
+                    </button>
+                    <a href="#" class="action-btn" data-tooltip="Live Demo" target="_blank">
+                      <span class="icon">🚀</span>
+                    </a>
+                    <a href="#" class="action-btn" data-tooltip="Source Code" target="_blank">
+                      <span class="icon">💻</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3 class="project-title">Real-Time Analytics Dashboard</h3>
+                  <div class="project-rating">
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <span class="rating-text">4.8</span>
+                  </div>
+                </div>
+                <p class="project-description">Interactive dashboard for real-time data visualization with Python, D3.js, and machine learning insights.</p>
+                <div class="project-tech">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">D3.js</span>
+                  <span class="tech-tag">Flask</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                </div>
+                <div class="project-meta">
+                  <div class="meta-item">
+                    <span class="meta-label">Duration:</span>
+                    <span class="meta-value">2 months</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Type:</span>
+                    <span class="meta-value">Data Science</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="ai" data-reveal="fade-up" data-delay="300">
+              <div class="project-image">
+                <img src="assets/placeholder-3.svg" alt="AI Chatbot" loading="lazy" />
+                <div class="project-overlay">
+                  <div class="project-actions">
+                    <button class="action-btn" data-tooltip="View Details" onclick="openProjectModal('chatbot')">
+                      <span class="icon">👁️</span>
+                    </button>
+                    <a href="#" class="action-btn" data-tooltip="Live Demo" target="_blank">
+                      <span class="icon">🚀</span>
+                    </a>
+                    <a href="#" class="action-btn" data-tooltip="Source Code" target="_blank">
+                      <span class="icon">💻</span>
+                    </a>
+                  </div>
+                  <div class="project-status">
+                    <span class="status-badge new">New</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3 class="project-title">AI-Powered Customer Support Bot</h3>
+                  <div class="project-rating">
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <span class="rating-text">4.9</span>
+                  </div>
+                </div>
+                <p class="project-description">Intelligent chatbot using NLP and machine learning to provide 24/7 customer support with 95% accuracy.</p>
+                <div class="project-tech">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">TensorFlow</span>
+                  <span class="tech-tag">NLP</span>
+                  <span class="tech-tag">FastAPI</span>
+                </div>
+                <div class="project-meta">
+                  <div class="meta-item">
+                    <span class="meta-label">Duration:</span>
+                    <span class="meta-value">4 months</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Accuracy:</span>
+                    <span class="meta-value">95%</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="web" data-reveal="fade-up" data-delay="400">
+              <div class="project-image">
+                <img src="assets/placeholder-1.svg" alt="Portfolio Website" loading="lazy" />
+                <div class="project-overlay">
+                  <div class="project-actions">
+                    <button class="action-btn" data-tooltip="View Details" onclick="openProjectModal('portfolio')">
+                      <span class="icon">👁️</span>
+                    </button>
+                    <a href="#" class="action-btn" data-tooltip="Live Demo" target="_blank">
+                      <span class="icon">🚀</span>
+                    </a>
+                    <a href="#" class="action-btn" data-tooltip="Source Code" target="_blank">
+                      <span class="icon">💻</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3 class="project-title">Interactive Portfolio Website</h3>
+                  <div class="project-rating">
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <span class="rating-text">4.7</span>
+                  </div>
+                </div>
+                <p class="project-description">Modern, responsive portfolio with advanced animations, dark/light mode, and interactive elements.</p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">CSS3</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">GSAP</span>
+                </div>
+                <div class="project-meta">
+                  <div class="meta-item">
+                    <span class="meta-label">Duration:</span>
+                    <span class="meta-value">1 month</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Type:</span>
+                    <span class="meta-value">Personal</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="data" data-reveal="fade-up" data-delay="500">
+              <div class="project-image">
+                <img src="assets/placeholder-2.svg" alt="ML Prediction Model" loading="lazy" />
+                <div class="project-overlay">
+                  <div class="project-actions">
+                    <button class="action-btn" data-tooltip="View Details" onclick="openProjectModal('ml-model')">
+                      <span class="icon">👁️</span>
+                    </button>
+                    <a href="#" class="action-btn" data-tooltip="Live Demo" target="_blank">
+                      <span class="icon">🚀</span>
+                    </a>
+                    <a href="#" class="action-btn" data-tooltip="Source Code" target="_blank">
+                      <span class="icon">💻</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3 class="project-title">Sales Prediction ML Model</h3>
+                  <div class="project-rating">
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <span class="rating-text">4.6</span>
+                  </div>
+                </div>
+                <p class="project-description">Machine learning model for sales forecasting with 92% accuracy using advanced regression techniques.</p>
+                <div class="project-tech">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Scikit-learn</span>
+                  <span class="tech-tag">Pandas</span>
+                  <span class="tech-tag">Jupyter</span>
+                </div>
+                <div class="project-meta">
+                  <div class="meta-item">
+                    <span class="meta-label">Accuracy:</span>
+                    <span class="meta-value">92%</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Dataset:</span>
+                    <span class="meta-value">10K+ records</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="web" data-reveal="fade-up" data-delay="600">
+              <div class="project-image">
+                <img src="assets/placeholder-3.svg" alt="Task Management App" loading="lazy" />
+                <div class="project-overlay">
+                  <div class="project-actions">
+                    <button class="action-btn" data-tooltip="View Details" onclick="openProjectModal('task-app')">
+                      <span class="icon">👁️</span>
+                    </button>
+                    <a href="#" class="action-btn" data-tooltip="Live Demo" target="_blank">
+                      <span class="icon">🚀</span>
+                    </a>
+                    <a href="#" class="action-btn" data-tooltip="Source Code" target="_blank">
+                      <span class="icon">💻</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3 class="project-title">Collaborative Task Manager</h3>
+                  <div class="project-rating">
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <span class="rating-text">4.8</span>
+                  </div>
+                </div>
+                <p class="project-description">Real-time collaborative task management application with team features and progress tracking.</p>
+                <div class="project-tech">
+                  <span class="tech-tag">Vue.js</span>
+                  <span class="tech-tag">Socket.io</span>
+                  <span class="tech-tag">Express</span>
+                  <span class="tech-tag">MySQL</span>
+                </div>
+                <div class="project-meta">
+                  <div class="meta-item">
+                    <span class="meta-label">Users:</span>
+                    <span class="meta-value">500+</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Features:</span>
+                    <span class="meta-value">Real-time</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+          
+          <!-- Load More Button -->
+          <div class="load-more-section" data-reveal="fade-up">
+            <button class="btn btn-ghost load-more-btn">
+              <span class="btn-text">Load More Projects</span>
+              <span class="btn-icon">↓</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="projects-cta">
+        <div class="container">
+          <div class="cta-content" data-reveal="fade-up">
+            <h2>Ready to Start Your Project?</h2>
+            <p>Let's collaborate and bring your ideas to life with cutting-edge technology and innovative solutions.</p>
+            <div class="cta-buttons">
+              <a href="contact.html" class="btn btn-primary">Start a Project</a>
+              <a href="pricing.html" class="btn btn-ghost">View Pricing</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Enhanced Project Modal -->
+    <div id="project-modal" class="modal" aria-hidden="true" aria-labelledby="modal-project-title" role="dialog">
+      <div class="modal-backdrop" data-close></div>
+      <div class="modal-content" role="document">
+        <button class="modal-close" aria-label="Close" data-close>×</button>
+        
+        <div class="modal-header">
+          <div class="modal-image">
+            <img id="modal-project-image" src="" alt="" />
+            <div class="modal-status">
+              <span id="modal-project-status" class="status-badge"></span>
+            </div>
+          </div>
+          <div class="modal-info">
+            <h2 id="modal-project-title"></h2>
+            <div class="modal-rating">
+              <span id="modal-project-stars" class="stars"></span>
+              <span id="modal-project-rating" class="rating-text"></span>
+            </div>
+            <p id="modal-project-desc"></p>
+          </div>
+        </div>
+        
+        <div class="modal-body">
+          <div class="modal-section">
+            <h3>Technologies Used</h3>
+            <div id="modal-project-tech" class="tech-tags"></div>
+          </div>
+          
+          <div class="modal-section">
+            <h3>Project Details</h3>
+            <div id="modal-project-details" class="project-details"></div>
+          </div>
+          
+          <div class="modal-section">
+            <h3>Key Features</h3>
+            <ul id="modal-project-features" class="feature-list"></ul>
+          </div>
+        </div>
+        
+        <div class="modal-footer">
+          <div class="modal-actions">
+            <a id="modal-live-demo" href="#" class="btn btn-primary" target="_blank">
+              <span class="btn-icon">🚀</span>
+              <span class="btn-text">Live Demo</span>
+            </a>
+            <a id="modal-source-code" href="#" class="btn btn-ghost" target="_blank">
+              <span class="btn-icon">💻</span>
+              <span class="btn-text">Source Code</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <nav class="footer-nav" aria-label="Footer">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a aria-current="page" class="active" href="projects.html">Projects</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="socials">
+          <a href="https://linkedin.com/in/amit-ranjan-maurya" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+          <a href="https://instagram.com/amitranjanmaurya" target="_blank" rel="noreferrer noopener">Instagram</a>
+        </div>
+        <p class="copy">© <span id="year"></span> Amit Ranjan Maurya</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/header-enhancements.js" defer></script>
+    <script src="js/enhanced-interactions.js" defer></script>
+    <script src="js/projects.js" defer></script>
+    <script src="js/advanced-projects.js" defer></script>
+    <script src="js/ai-config.js" defer></script>
+    <script src="js/ai-features.js" defer></script>
+    <script src="fix-theme.js" defer></script>
+    
+
+  </body>
+  </html>
+
+
