@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Services — Amit Ranjan Maurya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header" data-sticky>
+      <div class="header-inner">
+        <div class="logo-section">
+          <a class="logo" href="index.html" aria-label="Go to home">
+            <div class="logo-icon">
+              <span class="logo-symbol">A</span>
+            </div>
+            <div class="logo-content">
+              <span class="logo-text">Amit Ranjan</span>
+              <span class="logo-subtitle">Full Stack Developer</span>
+            </div>
+          </a>
+        </div>
+        
+        <nav class="site-nav" aria-label="Primary">
+          <ul id="nav-menu" class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="skills.html" class="nav-link">Skills</a></li>
+            <li><a href="services.html" class="nav-link active">Services</a></li>
+            <li><a href="projects.html" class="nav-link">Portfolio</a></li>
+            <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+          
+          <div class="header-actions">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+              <span class="theme-icon" aria-hidden="true"></span>
+              <span class="theme-text">Theme</span>
+            </button>
+            <a href="contact.html" class="cta-button">
+              <span class="cta-text">Let's Talk</span>
+              <span class="cta-icon">→</span>
+            </a>
+          </div>
+          
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+          </button>
+        </nav>
+      </div>
+      
+      <div class="header-progress"></div>
+    </header>
+
+    <main class="page services-page">
+      <!-- Services Hero -->
+      <section class="services-hero">
+        <div class="container">
+          <div class="services-hero-content" data-reveal="fade-up">
+            <div class="hero-badge">
+              <span class="badge-text">Professional Services</span>
+            </div>
+            <h1 class="services-title">What I Can Do For You</h1>
+            <p class="services-subtitle">Comprehensive digital solutions tailored to your business needs, from concept to deployment and beyond</p>
+            
+            <div class="services-highlights" data-reveal="fade-up" data-delay="200">
+              <div class="highlight-item">
+                <span class="highlight-icon">⚡</span>
+                <span class="highlight-text">Fast Delivery</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🎯</span>
+                <span class="highlight-text">Quality Focused</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🔧</span>
+                <span class="highlight-text">Full Support</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">💡</span>
+                <span class="highlight-text">Innovative Solutions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="services-hero-bg">
+          <div class="floating-icons">
+            <div class="service-icon">💻</div>
+            <div class="service-icon">📱</div>
+            <div class="service-icon">🤖</div>
+            <div class="service-icon">📊</div>
+            <div class="service-icon">🚀</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main Services -->
+      <section class="services-main">
+        <div class="container">
+          <div class="section-header" data-reveal="fade-up">
+            <h2 class="section-title">Core Services</h2>
+            <p class="section-subtitle">Specialized expertise across multiple domains</p>
+          </div>
+          
+          <div class="services-grid">
+            <!-- Web Development -->
+            <article class="service-card premium" data-reveal="fade-up" data-delay="100">
+              <div class="service-header">
+                <div class="service-icon-wrapper">
+                  <span class="service-icon-large">🌐</span>
+                </div>
+                <div class="service-badge">Most Popular</div>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Web Development</h3>
+                <p class="service-description">Modern, responsive websites and web applications built with cutting-edge technologies and best practices.</p>
+                
+                <div class="service-features">
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Responsive Design</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Performance Optimization</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">SEO Optimization</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Security Implementation</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Cross-browser Compatibility</span>
+                  </div>
+                </div>
+                
+                <div class="service-tech">
+                  <span class="tech-badge">React</span>
+                  <span class="tech-badge">Next.js</span>
+                  <span class="tech-badge">Node.js</span>
+                  <span class="tech-badge">TypeScript</span>
+                </div>
+                
+                <div class="service-pricing">
+                  <span class="price-label">Starting from</span>
+                  <span class="price-value">₹15,000</span>
+                </div>
+                
+                <div class="service-actions">
+                  <a href="contact.html" class="btn btn-primary">Get Started</a>
+                  <a href="projects.html" class="btn btn-ghost">View Examples</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Data Science -->
+            <article class="service-card" data-reveal="fade-up" data-delay="200">
+              <div class="service-header">
+                <div class="service-icon-wrapper">
+                  <span class="service-icon-large">📊</span>
+                </div>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Data Science & Analytics</h3>
+                <p class="service-description">Transform your data into actionable insights with advanced analytics, machine learning, and visualization.</p>
+                
+                <div class="service-features">
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Data Visualization</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Machine Learning Models</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Predictive Analytics</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Statistical Analysis</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Custom Dashboards</span>
+                  </div>
+                </div>
+                
+                <div class="service-tech">
+                  <span class="tech-badge">Python</span>
+                  <span class="tech-badge">Pandas</span>
+                  <span class="tech-badge">Scikit-learn</span>
+                  <span class="tech-badge">Tableau</span>
+                </div>
+                
+                <div class="service-pricing">
+                  <span class="price-label">Starting from</span>
+                  <span class="price-value">₹20,000</span>
+                </div>
+                
+                <div class="service-actions">
+                  <a href="contact.html" class="btn btn-primary">Get Started</a>
+                  <a href="projects.html" class="btn btn-ghost">View Examples</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- AI Development -->
+            <article class="service-card" data-reveal="fade-up" data-delay="300">
+              <div class="service-header">
+                <div class="service-icon-wrapper">
+                  <span class="service-icon-large">🤖</span>
+                </div>
+                <div class="service-badge new">New</div>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">AI & Machine Learning</h3>
+                <p class="service-description">Custom AI solutions including chatbots, automation systems, and intelligent applications.</p>
+                
+                <div class="service-features">
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">AI Chatbots</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Process Automation</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Natural Language Processing</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Computer Vision</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Custom AI Models</span>
+                  </div>
+                </div>
+                
+                <div class="service-tech">
+                  <span class="tech-badge">TensorFlow</span>
+                  <span class="tech-badge">PyTorch</span>
+                  <span class="tech-badge">OpenAI</span>
+                  <span class="tech-badge">Hugging Face</span>
+                </div>
+                
+                <div class="service-pricing">
+                  <span class="price-label">Starting from</span>
+                  <span class="price-value">₹25,000</span>
+                </div>
+                
+                <div class="service-actions">
+                  <a href="contact.html" class="btn btn-primary">Get Started</a>
+                  <a href="projects.html" class="btn btn-ghost">View Examples</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Mobile Development -->
+            <article class="service-card" data-reveal="fade-up" data-delay="400">
+              <div class="service-header">
+                <div class="service-icon-wrapper">
+                  <span class="service-icon-large">📱</span>
+                </div>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Mobile App Development</h3>
+                <p class="service-description">Cross-platform mobile applications that deliver exceptional user experiences on iOS and Android.</p>
+                
+                <div class="service-features">
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Cross-platform Development</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Native Performance</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">UI/UX Design</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">App Store Deployment</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Maintenance & Updates</span>
+                  </div>
+                </div>
+                
+                <div class="service-tech">
+                  <span class="tech-badge">React Native</span>
+                  <span class="tech-badge">Flutter</span>
+                  <span class="tech-badge">Expo</span>
+                  <span class="tech-badge">Firebase</span>
+                </div>
+                
+                <div class="service-pricing">
+                  <span class="price-label">Starting from</span>
+                  <span class="price-value">₹30,000</span>
+                </div>
+                
+                <div class="service-actions">
+                  <a href="contact.html" class="btn btn-primary">Get Started</a>
+                  <a href="projects.html" class="btn btn-ghost">View Examples</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- API Development -->
+            <article class="service-card" data-reveal="fade-up" data-delay="500">
+              <div class="service-header">
+                <div class="service-icon-wrapper">
+                  <span class="service-icon-large">🔗</span>
+                </div>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">API Development & Integration</h3>
+                <p class="service-description">Robust APIs and seamless integrations to connect your systems and enable data flow.</p>
+                
+                <div class="service-features">
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">REST API Development</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">GraphQL APIs</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Third-party Integrations</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">API Documentation</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Security & Authentication</span>
+                  </div>
+                </div>
+                
+                <div class="service-tech">
+                  <span class="tech-badge">Node.js</span>
+                  <span class="tech-badge">Express</span>
+                  <span class="tech-badge">FastAPI</span>
+                  <span class="tech-badge">Swagger</span>
+                </div>
+                
+                <div class="service-pricing">
+                  <span class="price-label">Starting from</span>
+                  <span class="price-value">₹12,000</span>
+                </div>
+                
+                <div class="service-actions">
+                  <a href="contact.html" class="btn btn-primary">Get Started</a>
+                  <a href="projects.html" class="btn btn-ghost">View Examples</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Consulting -->
+            <article class="service-card" data-reveal="fade-up" data-delay="600">
+              <div class="service-header">
+                <div class="service-icon-wrapper">
+                  <span class="service-icon-large">💡</span>
+                </div>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Technical Consulting</h3>
+                <p class="service-description">Strategic guidance and technical expertise to help you make informed decisions about your technology stack.</p>
+                
+                <div class="service-features">
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Technology Assessment</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Architecture Planning</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Performance Optimization</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Code Review</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Best Practices Training</span>
+                  </div>
+                </div>
+                
+                <div class="service-tech">
+                  <span class="tech-badge">Architecture</span>
+                  <span class="tech-badge">DevOps</span>
+                  <span class="tech-badge">Security</span>
+                  <span class="tech-badge">Scalability</span>
+                </div>
+                
+                <div class="service-pricing">
+                  <span class="price-label">Starting from</span>
+                  <span class="price-value">₹5,000/hr</span>
+                </div>
+                
+                <div class="service-actions">
+                  <a href="contact.html" class="btn btn-primary">Get Started</a>
+                  <a href="pricing.html" class="btn btn-ghost">View Pricing</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process Section -->
+      <section class="services-process">
+        <div class="container">
+          <div class="section-header" data-reveal="fade-up">
+            <h2 class="section-title">My Development Process</h2>
+            <p class="section-subtitle">A proven methodology that ensures quality results</p>
+          </div>
+          
+          <div class="process-steps">
+            <div class="process-step" data-reveal="fade-up" data-delay="100">
+              <div class="step-number">01</div>
+              <div class="step-content">
+                <h3 class="step-title">Discovery & Planning</h3>
+                <p class="step-description">Understanding your requirements, goals, and constraints to create a comprehensive project plan.</p>
+              </div>
+            </div>
+            
+            <div class="process-step" data-reveal="fade-up" data-delay="200">
+              <div class="step-number">02</div>
+              <div class="step-content">
+                <h3 class="step-title">Design & Architecture</h3>
+                <p class="step-description">Creating wireframes, mockups, and technical architecture that align with your vision.</p>
+              </div>
+            </div>
+            
+            <div class="process-step" data-reveal="fade-up" data-delay="300">
+              <div class="step-number">03</div>
+              <div class="step-content">
+                <h3 class="step-title">Development & Testing</h3>
+                <p class="step-description">Building your solution with clean, maintainable code and rigorous testing procedures.</p>
+              </div>
+            </div>
+            
+            <div class="process-step" data-reveal="fade-up" data-delay="400">
+              <div class="step-number">04</div>
+              <div class="step-content">
+                <h3 class="step-title">Deployment & Support</h3>
+                <p class="step-description">Launching your project and providing ongoing support and maintenance as needed.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service Statistics -->
+      <section class="services-stats-section">
+        <div class="container">
+          <div class="section-header" data-reveal="fade-up">
+            <h2 class="section-title">Why Choose My Services?</h2>
+            <p class="section-subtitle">Proven track record of delivering exceptional results</p>
+          </div>
+          
+          <div class="service-stats" data-reveal="fade-up">
+            <div class="service-stat">
+              <span class="stat-number-large" data-target="50">0</span>
+              <span class="stat-label-large">Projects Completed</span>
+            </div>
+            <div class="service-stat">
+              <span class="stat-number-large" data-target="98">0</span>
+              <span class="stat-label-large">Client Satisfaction %</span>
+            </div>
+            <div class="service-stat">
+              <span class="stat-number-large" data-target="24">0</span>
+              <span class="stat-label-large">Avg Response Time (hrs)</span>
+            </div>
+            <div class="service-stat">
+              <span class="stat-number-large" data-target="15">0</span>
+              <span class="stat-label-large">Technologies Mastered</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service Comparison -->
+      <section class="services-comparison">
+        <div class="container">
+          <div class="service-comparison" data-reveal="fade-up">
+            <div class="comparison-header">
+              <h3>Service Comparison Matrix</h3>
+              <p>Compare what's included in each service category</p>
+            </div>
+            
+            <div class="comparison-table">
+              <div class="comparison-row">
+                <div class="comparison-feature"><strong>Features</strong></div>
+                <div class="comparison-cell"><strong>Basic</strong></div>
+                <div class="comparison-cell"><strong>Professional</strong></div>
+                <div class="comparison-cell"><strong>Enterprise</strong></div>
+              </div>
+              
+              <div class="comparison-row">
+                <div class="comparison-feature">Responsive Design</div>
+                <div class="comparison-cell"><span class="comparison-check">✓</span></div>
+                <div class="comparison-cell"><span class="comparison-check">✓</span></div>
+                <div class="comparison-cell"><span class="comparison-check">✓</span></div>
+              </div>
+              
+              <div class="comparison-row">
+                <div class="comparison-feature">Custom Development</div>
+                <div class="comparison-cell"><span class="comparison-cross">—</span></div>
+                <div class="comparison-cell"><span class="comparison-check">✓</span></div>
+                <div class="comparison-cell"><span class="comparison-check">✓</span></div>
+              </div>
+              
+              <div class="comparison-row">
+                <div class="comparison-feature">Advanced Integrations</div>
+                <div class="comparison-cell"><span class="comparison-cross">—</span></div>
+                <div class="comparison-cell"><span class="comparison-cross">—</span></div>
+                <div class="comparison-cell"><span class="comparison-check">✓</span></div>
+              </div>
+              
+              <div class="comparison-row">
+                <div class="comparison-feature">24/7 Support</div>
+                <div class="comparison-cell"><span class="comparison-cross">—</span></div>
+                <div class="comparison-cell"><span class="comparison-check">✓</span></div>
+                <div class="comparison-cell"><span class="comparison-check">✓</span></div>
+              </div>
+              
+              <div class="comparison-row">
+                <div class="comparison-feature">Performance Optimization</div>
+                <div class="comparison-cell"><span class="comparison-check">✓</span></div>
+                <div class="comparison-cell"><span class="comparison-check">✓</span></div>
+                <div class="comparison-cell"><span class="comparison-check">✓</span></div>
+              </div>
+              
+              <div class="comparison-row">
+                <div class="comparison-feature">Security Audit</div>
+                <div class="comparison-cell"><span class="comparison-cross">—</span></div>
+                <div class="comparison-cell"><span class="comparison-check">✓</span></div>
+                <div class="comparison-cell"><span class="comparison-check">✓</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="services-testimonials">
+        <div class="container">
+          <div class="section-header" data-reveal="fade-up">
+            <h2 class="section-title">What Clients Say</h2>
+            <p class="section-subtitle">Real feedback from satisfied customers</p>
+          </div>
+          
+          <div class="testimonials-grid">
+            <div class="testimonial-card" data-reveal="fade-up" data-delay="100">
+              <div class="testimonial-content">
+                <div class="testimonial-rating">
+                  <span class="stars">⭐⭐⭐⭐⭐</span>
+                  <span class="rating-text">5.0</span>
+                </div>
+                <p class="testimonial-text">"Amit delivered an exceptional e-commerce platform that exceeded our expectations. The attention to detail and performance optimization was outstanding."</p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <span class="avatar-text">JD</span>
+                </div>
+                <div class="author-info">
+                  <h4 class="author-name">John Doe</h4>
+                  <p class="author-title">CEO, TechCorp</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="testimonial-card" data-reveal="fade-up" data-delay="200">
+              <div class="testimonial-content">
+                <div class="testimonial-rating">
+                  <span class="stars">⭐⭐⭐⭐⭐</span>
+                  <span class="rating-text">5.0</span>
+                </div>
+                <p class="testimonial-text">"The AI chatbot solution transformed our customer service. 95% accuracy and 24/7 availability has significantly improved our customer satisfaction."</p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <span class="avatar-text">SM</span>
+                </div>
+                <div class="author-info">
+                  <h4 class="author-name">Sarah Miller</h4>
+                  <p class="author-title">CTO, InnovateLab</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="testimonial-card" data-reveal="fade-up" data-delay="300">
+              <div class="testimonial-content">
+                <div class="testimonial-rating">
+                  <span class="stars">⭐⭐⭐⭐⭐</span>
+                  <span class="rating-text">4.9</span>
+                </div>
+                <p class="testimonial-text">"Professional, reliable, and incredibly skilled. The data analytics dashboard provided insights we never knew we needed. Highly recommended!"</p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <span class="avatar-text">MJ</span>
+                </div>
+                <div class="author-info">
+                  <h4 class="author-name">Michael Johnson</h4>
+                  <p class="author-title">Data Director, Analytics Pro</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="services-faq">
+        <div class="container">
+          <div class="section-header" data-reveal="fade-up">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Everything you need to know about my services</p>
+          </div>
+          
+          <div class="faq-grid" data-reveal="fade-up">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>How long does a typical project take?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Project timelines vary based on complexity and scope. Simple websites take 1-2 weeks, while complex applications can take 2-4 months. I provide detailed timelines during the planning phase.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Do you provide ongoing support and maintenance?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes! I offer comprehensive support packages including bug fixes, security updates, performance monitoring, and feature enhancements. Support levels vary by service tier.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can you work with my existing team?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Absolutely! I collaborate seamlessly with existing development teams, designers, and project managers. I can integrate into your workflow and communication tools.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>What technologies do you specialize in?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>I specialize in modern web technologies including React, Node.js, Python, TypeScript, and various databases. For AI/ML, I work with TensorFlow, PyTorch, and cloud AI services.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Do you offer custom pricing for large projects?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes, I provide custom quotes for enterprise-level projects. Pricing depends on scope, timeline, and specific requirements. Contact me for a detailed consultation and quote.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>What's your refund policy?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>I offer a satisfaction guarantee. If you're not happy with the initial deliverables, I'll work to make it right or provide a partial refund based on work completed.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="services-cta">
+        <div class="container">
+          <div class="cta-content" data-reveal="fade-up">
+            <h2>Ready to Transform Your Ideas?</h2>
+            <p>Let's discuss your project and find the perfect solution for your needs.</p>
+            <div class="cta-buttons">
+              <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+              <a href="pricing.html" class="btn btn-ghost">View Pricing Plans</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <nav class="footer-nav" aria-label="Footer">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a aria-current="page" class="active" href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="socials">
+          <a href="https://linkedin.com/in/amit-ranjan-maurya" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+          <a href="https://instagram.com/amitranjanmaurya" target="_blank" rel="noreferrer noopener">Instagram</a>
+        </div>
+        <p class="copy">© <span id="year"></span> Amit Ranjan Maurya</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/header-enhancements.js" defer></script>
+    <script src="js/enhanced-interactions.js" defer></script>
+    <script src="js/ai-config.js" defer></script>
+    <script src="js/ai-features.js" defer></script>
+    <script src="fix-theme.js" defer></script>
+    <script src="verify-headers.js" defer></script>
+    
+
+  </body>
+  </html>
+
+

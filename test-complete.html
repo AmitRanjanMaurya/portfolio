@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Feature Test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .test-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Inter, sans-serif;
+        }
+        
+        .test-section {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .test-button {
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 10px;
+            font-weight: 500;
+        }
+        
+        .test-result {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+        
+        .success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">
+                <span class="logo-text">Test</span>
+            </a>
+            <nav class="site-nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                            <span class="theme-icon" aria-hidden="true"></span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding-top: 100px;">
+        <div class="test-container">
+            <h1 style="color: var(--text);">Portfolio Feature Test</h1>
+            
+            <div class="test-section">
+                <h2 style="color: var(--text);">Theme Toggle Test</h2>
+                <p style="color: var(--muted);">Click the theme toggle button in the header to switch between light and dark modes.</p>
+                <button class="test-button" onclick="testTheme()">Test Theme Toggle</button>
+                <div id="theme-results"></div>
+            </div>
+            
+            <div class="test-section">
+                <h2 style="color: var(--text);">AI Chatbot Test</h2>
+                <p style="color: var(--muted);">Look for the AI chatbot in the bottom-right corner.</p>
+                <button class="test-button" onclick="testChatbot()">Test AI Chatbot</button>
+                <div id="chatbot-results"></div>
+            </div>
+            
+            <div class="test-section">
+                <h2 style="color: var(--text);">CSS Variables Test</h2>
+                <p style="color: var(--muted);">Testing if CSS variables are working properly.</p>
+                <button class="test-button" onclick="testCSS()">Test CSS Variables</button>
+                <div id="css-results"></div>
+            </div>
+            
+            <div class="test-section">
+                <h2 style="color: var(--text);">Local Storage Test</h2>
+                <p style="color: var(--muted);">Testing theme persistence.</p>
+                <button class="test-button" onclick="testStorage()">Test Storage</button>
+                <div id="storage-results"></div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function addResult(containerId, message, type = 'info') {
+            const container = document.getElementById(containerId);
+            const result = document.createElement('div');
+            result.className = `test-result ${type}`;
+            result.textContent = message;
+            container.appendChild(result);
+        }
+        
+        function testTheme() {
+            const results = document.getElementById('theme-results');
+            results.innerHTML = '';
+            
+            const root = document.documentElement;
+            const toggle = document.getElementById('theme-toggle');
+            
+            if (toggle) {
+                addResult('theme-results', '✓ Theme toggle button found', 'success');
+                
+                const currentTheme = root.classList.contains('light') ? 'light' : 'dark';
+                addResult('theme-results', `Current theme: ${currentTheme}`, 'info');
+                
+                const stored = localStorage.getItem('theme');
+                addResult('theme-results', `Stored theme: ${stored || 'none'}`, 'info');
+                
+                // Test click
+                toggle.click();
+                setTimeout(() => {
+                    const newTheme = root.classList.contains('light') ? 'light' : 'dark';
+                    const newStored = localStorage.getItem('theme');
+                    addResult('theme-results', `After click - Theme: ${newTheme}, Stored: ${newStored}`, 'success');
+                }, 100);
+            } else {
+                addResult('theme-results', '✗ Theme toggle button not found', 'error');
+            }
+        }
+        
+        function testChatbot() {
+            const results = document.getElementById('chatbot-results');
+            results.innerHTML = '';
+            
+            const chatbot = document.querySelector('.ai-chatbot-widget');
+            const toggle = document.getElementById('ai-chat-toggle');
+            const panel = document.getElementById('ai-chat-panel');
+            
+            if (chatbot) {
+                addResult('chatbot-results', '✓ AI chatbot widget found', 'success');
+            } else {
+                addResult('chatbot-results', '✗ AI chatbot widget not found', 'error');
+            }
+            
+            if (toggle) {
+                addResult('chatbot-results', '✓ AI chat toggle found', 'success');
+            } else {
+                addResult('chatbot-results', '✗ AI chat toggle not found', 'error');
+            }
+            
+            if (panel) {
+                addResult('chatbot-results', '✓ AI chat panel found', 'success');
+            } else {
+                addResult('chatbot-results', '✗ AI chat panel not found', 'error');
+            }
+            
+            if (window.aiAssistant) {
+                addResult('chatbot-results', '✓ AI assistant instance found', 'success');
+            } else {
+                addResult('chatbot-results', '✗ AI assistant instance not found', 'error');
+            }
+        }
+        
+        function testCSS() {
+            const results = document.getElementById('css-results');
+            results.innerHTML = '';
+            
+            const root = document.documentElement;
+            const computedStyle = getComputedStyle(root);
+            
+            const bgColor = computedStyle.getPropertyValue('--bg').trim();
+            const textColor = computedStyle.getPropertyValue('--text').trim();
+            
+            if (bgColor) {
+                addResult('css-results', `✓ --bg variable: ${bgColor}`, 'success');
+            } else {
+                addResult('css-results', '✗ --bg variable not found', 'error');
+            }
+            
+            if (textColor) {
+                addResult('css-results', `✓ --text variable: ${textColor}`, 'success');
+            } else {
+                addResult('css-results', '✗ --text variable not found', 'error');
+            }
+        }
+        
+        function testStorage() {
+            const results = document.getElementById('storage-results');
+            results.innerHTML = '';
+            
+            try {
+                localStorage.setItem('test', 'working');
+                const test = localStorage.getItem('test');
+                localStorage.removeItem('test');
+                
+                if (test === 'working') {
+                    addResult('storage-results', '✓ Local storage is working', 'success');
+                } else {
+                    addResult('storage-results', '✗ Local storage test failed', 'error');
+                }
+                
+                const theme = localStorage.getItem('theme');
+                addResult('storage-results', `Current stored theme: ${theme || 'none'}`, 'info');
+            } catch (e) {
+                addResult('storage-results', '✗ Local storage error: ' + e.message, 'error');
+            }
+        }
+        
+        // Auto-run tests on load
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                testTheme();
+                testChatbot();
+                testCSS();
+                testStorage();
+            }, 1000);
+        });
+    </script>
+    
+    <script src="js/ai-config.js" defer></script>
+    <script src="js/ai-features.js" defer></script>
+    <script src="fix-theme.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Pricing Plans - Amit Ranjan Maurya. Professional web development, data science, and AI solutions with transparent pricing." />
+    <title>Pricing Plans — Amit Ranjan Maurya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/theme.svg" />
+  </head>
+  <body>
+    <header class="site-header" data-sticky>
+      <div class="header-inner">
+        <div class="logo-section">
+          <a class="logo" href="index.html" aria-label="Go to home">
+            <div class="logo-icon">
+              <span class="logo-symbol">A</span>
+            </div>
+            <div class="logo-content">
+              <span class="logo-text">Amit Ranjan</span>
+              <span class="logo-subtitle">Full Stack Developer</span>
+            </div>
+          </a>
+        </div>
+        
+        <nav class="site-nav" aria-label="Primary">
+          <ul id="nav-menu" class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="skills.html" class="nav-link">Skills</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="projects.html" class="nav-link">Portfolio</a></li>
+            <li><a href="pricing.html" class="nav-link active">Pricing</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+          
+          <div class="header-actions">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+              <span class="theme-icon" aria-hidden="true"></span>
+              <span class="theme-text">Theme</span>
+            </button>
+            <a href="contact.html" class="cta-button">
+              <span class="cta-text">Let's Talk</span>
+              <span class="cta-icon">→</span>
+            </a>
+          </div>
+          
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+          </button>
+        </nav>
+      </div>
+      
+      <div class="header-progress"></div>
+    </header>
+
+    <main class="page pricing-page">
+      <!-- Pricing Hero -->
+      <section class="pricing-hero">
+        <div class="container">
+          <div class="pricing-hero-content" data-reveal="fade-up">
+            <div class="hero-badge">
+              <span class="badge-text">Transparent Pricing</span>
+            </div>
+            <h1 class="pricing-title">Choose Your Perfect Plan</h1>
+            <p class="pricing-subtitle">Professional development solutions tailored to your needs and budget. No hidden fees, just quality work.</p>
+            
+            <div class="pricing-toggle" data-reveal="fade-up" data-delay="200">
+              <span class="toggle-label">Monthly</span>
+              <button class="toggle-switch" id="pricing-toggle" aria-label="Toggle pricing period">
+                <span class="toggle-slider"></span>
+              </button>
+              <span class="toggle-label">Project Based</span>
+              <span class="toggle-discount">Save 20%</span>
+            </div>
+          </div>
+        </div>
+        <div class="pricing-hero-bg">
+          <div class="floating-elements">
+            <div class="price-element">₹</div>
+            <div class="price-element">💰</div>
+            <div class="price-element">📊</div>
+            <div class="price-element">🚀</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Plans -->
+      <section class="section pricing-plans">
+        <div class="container">
+          <div class="plans-grid">
+            <!-- Basic Plan -->
+            <div class="pricing-card basic-plan" data-reveal="fade-up" data-delay="100">
+              <div class="plan-header">
+                <div class="plan-icon">
+                  <span class="icon">🌱</span>
+                </div>
+                <h3 class="plan-name">Basic</h3>
+                <p class="plan-description">Perfect for small projects and startups</p>
+                <div class="plan-price">
+                  <span class="currency">₹</span>
+                  <span class="amount monthly-price">8,000</span>
+                  <span class="amount project-price" style="display: none;">6,400</span>
+                  <span class="period monthly-period">/month</span>
+                  <span class="period project-period" style="display: none;">/project</span>
+                </div>
+                <div class="plan-savings project-savings" style="display: none;">
+                  <span class="savings-text">Save ₹1,600</span>
+                </div>
+              </div>
+              <div class="plan-features">
+                <ul>
+                  <li><span class="feature-icon">✓</span>Landing Page Design</li>
+                  <li><span class="feature-icon">✓</span>Responsive Layout</li>
+                  <li><span class="feature-icon">✓</span>Basic SEO Setup</li>
+                  <li><span class="feature-icon">✓</span>Contact Form</li>
+                  <li><span class="feature-icon">✓</span>2 Revisions</li>
+                  <li><span class="feature-icon">✓</span>1 Week Delivery</li>
+                  <li><span class="feature-icon">✓</span>Email Support</li>
+                </ul>
+              </div>
+              <div class="plan-cta">
+                <a href="contact.html" class="btn btn-ghost">Get Started</a>
+              </div>
+            </div>
+
+            <!-- Professional Plan -->
+            <div class="pricing-card professional-plan popular" data-reveal="fade-up" data-delay="200">
+              <div class="popular-badge">
+                <span>Most Popular</span>
+              </div>
+              <div class="plan-header">
+                <div class="plan-icon">
+                  <span class="icon">💼</span>
+                </div>
+                <h3 class="plan-name">Professional</h3>
+                <p class="plan-description">Ideal for growing businesses</p>
+                <div class="plan-price">
+                  <span class="currency">₹</span>
+                  <span class="amount monthly-price">15,000</span>
+                  <span class="amount project-price" style="display: none;">12,000</span>
+                  <span class="period monthly-period">/month</span>
+                  <span class="period project-period" style="display: none;">/project</span>
+                </div>
+                <div class="plan-savings project-savings" style="display: none;">
+                  <span class="savings-text">Save ₹3,000</span>
+                </div>
+              </div>
+              <div class="plan-features">
+                <ul>
+                  <li><span class="feature-icon">✓</span>Multi-page Website</li>
+                  <li><span class="feature-icon">✓</span>Custom Design</li>
+                  <li><span class="feature-icon">✓</span>Advanced SEO</li>
+                  <li><span class="feature-icon">✓</span>CMS Integration</li>
+                  <li><span class="feature-icon">✓</span>E-commerce Setup</li>
+                  <li><span class="feature-icon">✓</span>5 Revisions</li>
+                  <li><span class="feature-icon">✓</span>2 Weeks Delivery</li>
+                  <li><span class="feature-icon">✓</span>Priority Support</li>
+                </ul>
+              </div>
+              <div class="plan-cta">
+                <a href="contact.html" class="btn btn-primary">Choose Plan</a>
+              </div>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="pricing-card premium-plan" data-reveal="fade-up" data-delay="300">
+              <div class="plan-header">
+                <div class="plan-icon">
+                  <span class="icon">⭐</span>
+                </div>
+                <h3 class="plan-name">Premium</h3>
+                <p class="plan-description">For complex applications and data projects</p>
+                <div class="plan-price">
+                  <span class="currency">₹</span>
+                  <span class="amount monthly-price">25,000</span>
+                  <span class="amount project-price" style="display: none;">20,000</span>
+                  <span class="period monthly-period">/month</span>
+                  <span class="period project-period" style="display: none;">/project</span>
+                </div>
+                <div class="plan-savings project-savings" style="display: none;">
+                  <span class="savings-text">Save ₹5,000</span>
+                </div>
+              </div>
+              <div class="plan-features">
+                <ul>
+                  <li><span class="feature-icon">✓</span>Full-Stack Application</li>
+                  <li><span class="feature-icon">✓</span>Database Design</li>
+                  <li><span class="feature-icon">✓</span>API Development</li>
+                  <li><span class="feature-icon">✓</span>Data Analytics</li>
+                  <li><span class="feature-icon">✓</span>Cloud Deployment</li>
+                  <li><span class="feature-icon">✓</span>Unlimited Revisions</li>
+                  <li><span class="feature-icon">✓</span>3 Weeks Delivery</li>
+                  <li><span class="feature-icon">✓</span>24/7 Support</li>
+                </ul>
+              </div>
+              <div class="plan-cta">
+                <a href="contact.html" class="btn btn-secondary">Get Premium</a>
+              </div>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="pricing-card enterprise-plan" data-reveal="fade-up" data-delay="400">
+              <div class="plan-header">
+                <div class="plan-icon">
+                  <span class="icon">🚀</span>
+                </div>
+                <h3 class="plan-name">Enterprise</h3>
+                <p class="plan-description">Custom solutions for large organizations</p>
+                <div class="plan-price">
+                  <span class="currency">₹</span>
+                  <span class="amount monthly-price">50,000</span>
+                  <span class="amount project-price" style="display: none;">40,000</span>
+                  <span class="period monthly-period">/month</span>
+                  <span class="period project-period" style="display: none;">/project</span>
+                </div>
+                <div class="plan-savings project-savings" style="display: none;">
+                  <span class="savings-text">Save ₹10,000</span>
+                </div>
+              </div>
+              <div class="plan-features">
+                <ul>
+                  <li><span class="feature-icon">✓</span>Custom Architecture</li>
+                  <li><span class="feature-icon">✓</span>AI/ML Integration</li>
+                  <li><span class="feature-icon">✓</span>Scalable Infrastructure</li>
+                  <li><span class="feature-icon">✓</span>Advanced Analytics</li>
+                  <li><span class="feature-icon">✓</span>Security Audit</li>
+                  <li><span class="feature-icon">✓</span>Dedicated Support</li>
+                  <li><span class="feature-icon">✓</span>Custom Timeline</li>
+                  <li><span class="feature-icon">✓</span>Ongoing Maintenance</li>
+                </ul>
+              </div>
+              <div class="plan-cta">
+                <a href="contact.html" class="btn btn-ghost">Contact Sales</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="section pricing-faq">
+        <div class="container">
+          <div class="section-header" data-reveal="fade-up">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Everything you need to know about our pricing</p>
+          </div>
+          
+          <div class="faq-grid" data-reveal="fade-up">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>What's included in the Basic plan?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>The Basic plan includes a professional landing page with responsive design, basic SEO setup, contact form integration, and 2 rounds of revisions. Perfect for personal portfolios or simple business websites.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can I upgrade my plan later?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Absolutely! You can upgrade your plan at any time. We'll credit any unused portion of your current plan toward the new plan and only charge the difference.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Do you offer custom solutions?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes! Our Enterprise plan is fully customizable. We can create bespoke solutions tailored to your specific requirements, including custom integrations and specialized functionality.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>What's your refund policy?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>We offer a 30-day money-back guarantee. If you're not satisfied with our work, we'll refund your payment in full, no questions asked.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>How long does development take?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Timeline varies by plan: Basic (1 week), Professional (2 weeks), Premium (3 weeks). Enterprise projects have custom timelines based on scope and requirements.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Do you provide ongoing support?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes! All plans include post-launch support. Basic includes email support, Professional gets priority support, Premium includes 24/7 support, and Enterprise gets dedicated support.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="section pricing-cta">
+        <div class="container">
+          <div class="cta-content" data-reveal="fade-up">
+            <h2>Ready to Start Your Project?</h2>
+            <p>Let's discuss your requirements and find the perfect plan for your needs.</p>
+            <div class="cta-buttons">
+              <a href="contact.html" class="btn btn-primary">Get Started Today</a>
+              <a href="projects.html" class="btn btn-ghost">View Portfolio</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <nav class="footer-nav" aria-label="Footer">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="socials">
+          <a href="https://linkedin.com/in/amit-ranjan-maurya" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://instagram.com/amitranjanmaurya" target="_blank" rel="noreferrer noopener" aria-label="Instagram">Instagram</a>
+        </div>
+        <p class="copy">© <span id="year"></span> Amit Ranjan Maurya</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/header-enhancements.js" defer></script>
+    <script src="js/enhanced-interactions.js" defer></script>
+    <script src="js/ai-config.js" defer></script>
+    <script src="js/ai-features.js" defer></script>
+    <script src="fix-theme.js" defer></script>
+    
+
+  </body>
+</html>

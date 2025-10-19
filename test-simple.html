@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple AI Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-result { margin: 10px 0; padding: 10px; border-radius: 5px; }
+        .success { background: #d4edda; color: #155724; }
+        .error { background: #f8d7da; color: #721c24; }
+    </style>
+</head>
+<body>
+    <h1>AI Chatbot Test</h1>
+    <div id="test-results"></div>
+    
+    <script>
+        const results = document.getElementById('test-results');
+        
+        function addResult(message, isSuccess = true) {
+            const div = document.createElement('div');
+            div.className = `test-result ${isSuccess ? 'success' : 'error'}`;
+            div.textContent = message;
+            results.appendChild(div);
+        }
+        
+        // Test 1: Check if we can create elements
+        try {
+            const testDiv = document.createElement('div');
+            addResult('✓ DOM manipulation works');
+        } catch (e) {
+            addResult('✗ DOM manipulation failed: ' + e.message, false);
+        }
+        
+        // Test 2: Check if we can add CSS
+        try {
+            const testWidget = document.createElement('div');
+            testWidget.style.cssText = `
+                position: fixed;
+                bottom: 24px;
+                right: 24px;
+                width: 64px;
+                height: 64px;
+                background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 28px;
+                cursor: pointer;
+                z-index: 1000;
+            `;
+            testWidget.innerHTML = '🤖';
+            document.body.appendChild(testWidget);
+            addResult('✓ CSS styling works - chatbot should appear in bottom-right');
+        } catch (e) {
+            addResult('✗ CSS styling failed: ' + e.message, false);
+        }
+        
+        // Test 3: Check if classes work
+        try {
+            class TestClass {
+                constructor() {
+                    this.test = 'working';
+                }
+                
+                getTest() {
+                    return this.test;
+                }
+            }
+            
+            const instance = new TestClass();
+            if (instance.getTest() === 'working') {
+                addResult('✓ ES6 Classes work');
+            } else {
+                addResult('✗ ES6 Classes not working properly', false);
+            }
+        } catch (e) {
+            addResult('✗ ES6 Classes failed: ' + e.message, false);
+        }
+        
+        // Test 4: Check DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', () => {
+            addResult('✓ DOMContentLoaded event works');
+        });
+        
+        addResult('Test completed - check for chatbot in bottom-right corner');
+    </script>
+</body>
+</html>
